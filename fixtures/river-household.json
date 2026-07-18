@@ -1,0 +1,27 @@
+{
+  "household": "River Household",
+  "members": [
+    {
+      "name": "Casey",
+      "role": "adult"
+    },
+    {
+      "name": "Jordan",
+      "role": "adult"
+    }
+  ],
+  "items": [
+    {
+      "kind": "grocery",
+      "title": "Oat milk"
+    },
+    {
+      "kind": "task",
+      "title": "Pack the library books"
+    },
+    {
+      "kind": "note",
+      "title": "Use the blue reusable bag"
+    }
+  ]
+}

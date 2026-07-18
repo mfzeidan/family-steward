@@ -1,0 +1,45 @@
+{
+  "household": "River Household",
+  "operations": [
+    {
+      "operation": "add_item",
+      "kind": "grocery",
+      "title": "Oat milk"
+    },
+    {
+      "operation": "prepare_action",
+      "action_type": "calendar.create",
+      "payload": {
+        "title": "School pickup",
+        "when": "Thursday at 3:15 PM",
+        "failures_before_success": 0
+      },
+      "save_as": "pickup"
+    },
+    {
+      "operation": "approve",
+      "ref": "pickup",
+      "actor": "Casey"
+    },
+    {
+      "operation": "prepare_action",
+      "action_type": "message.send",
+      "payload": {
+        "recipient": "Jordan",
+        "body": "The library books are packed.",
+        "failures_before_success": 1
+      },
+      "save_as": "message"
+    },
+    {
+      "operation": "approve",
+      "ref": "message",
+      "actor": "Casey"
+    },
+    {
+      "operation": "retry",
+      "ref": "message",
+      "actor": "Casey"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "family-steward"
+version = "0.1.0"
+description = "Privacy-first household operations reference application with durable state and explicit approvals"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+family-steward = "family_steward.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
