@@ -112,8 +112,8 @@ Not implemented:
 
 ## Repository status
 
-This is an intentionally compact reference implementation for architecture review, local experimentation, and portfolio discussion. It is not a production household assistant.
+This is a compact reference implementation of the deterministic core of a household agent: state, approvals, retries, and the audit trail. In a full agent a language model sits in front of this core and proposes actions; this repository keeps only the part the model can't talk its way around. It is not a production household assistant.
 
 ## License
 
-No open-source license has been selected. Copyright and reuse rights are reserved unless a license is added later.
+MIT. See [LICENSE](LICENSE).
